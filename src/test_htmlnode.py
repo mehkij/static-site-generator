@@ -10,6 +10,7 @@ class TestHTMLNode(unittest.TestCase):
 
         leaf = LeafNode("Best Backend Bootcamp Ever...!", "a", {"href": "https://boot.dev", "target": "_blank"})
         leaf2 = LeafNode("The koi leapt over the sun", "p", None)
+        leaf3 = LeafNode("Lorem Ipsum", None, None)
 
         print(node)
         print(node2)
@@ -18,6 +19,7 @@ class TestHTMLNode(unittest.TestCase):
 
         print("Leaf 1:",leaf.to_html())
         print("Leaf 2:", leaf2.to_html())
+        print("Leaf 3:", leaf3.to_html())
 
 if __name__ == "__main__":
     unittest.main()
