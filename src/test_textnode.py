@@ -7,7 +7,7 @@ class TestTextNode(unittest.TestCase):
         node2 = TextNode("This is a text node", "bold")
         # node3 = TextNode("This is a text", "bold")
         # node4 = TextNode("This is a text node", "italics")
-        # node5 = TextNode("This is a text node", "bold", "https://boot.dev.com")
+        # node5 = TextNode("This is a text node", "bold", "https://boot.dev")
         self.assertEqual(node, node2)
         # self.assertEqual(node, node3)
         # self.assertEqual(node, node4)
