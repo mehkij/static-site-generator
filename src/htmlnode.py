@@ -9,13 +9,13 @@ class HTMLNode:
         raise NotImplementedError()
     
     def props_to_html(self):
+        if self.props is None:
+            return ""
+        
         text = ""
 
-        if self.props is not None:
-            for key, value in self.props.items():
+        for key, value in self.props.items():
                 text += f' {key}="{value}"'
-        else:
-            text = ""
         
         return text
 
