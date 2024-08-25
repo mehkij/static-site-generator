@@ -1,6 +1,5 @@
 import unittest
-from textnode import TextNode
-from textnode import text_node_to_html_node
+from textnode import *
 
 class TestTextNode(unittest.TestCase):
     def test_eq(self):
@@ -22,13 +21,12 @@ class TestTextNode(unittest.TestCase):
         # self.assertEqual(node, node4)
         # self.assertEqual(node, node5)
 
-        print("Text Node 1:", text_node_to_html_node(html))
-        print("Text Node 2:", text_node_to_html_node(html2))        
-        print("Text Node 3:", text_node_to_html_node(html3))
-        print("Text Node 4:", text_node_to_html_node(html4))
-        print("Text Node 5:", text_node_to_html_node(html5))
-        print("Text Node 6:", text_node_to_html_node(html6))
-
-
+        # print("Text Node 1:", text_node_to_html_node(html))
+        # print("Text Node 2:", text_node_to_html_node(html2))        
+        # print("Text Node 3:", text_node_to_html_node(html3))
+        # print("Text Node 4:", text_node_to_html_node(html4))
+        # print("Text Node 5:", text_node_to_html_node(html5))
+        # print("Text Node 6:", text_node_to_html_node(html6))
+        
 if __name__ == "__main__":
     unittest.main()
