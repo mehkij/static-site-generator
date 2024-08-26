@@ -1,6 +1,6 @@
 import unittest
 from textnode import *
-from inline_markdown import split_nodes_delimiter
+from inline_markdown import *
 
 class TestInlineMarkdown(unittest.TestCase):
     def test_eq(self):
@@ -15,6 +15,12 @@ class TestInlineMarkdown(unittest.TestCase):
         print(new_nodes)
         print(new_nodes2)
         print(new_nodes3)
+
+        text = "This is text with a ![rick roll](https://i.imgur.com/aKaOqIh.gif) and ![obi wan](https://i.imgur.com/fJRm4Vk.jpeg)"
+        text2 = "This is text with a link [to boot dev](https://www.boot.dev) and [to youtube](https://www.youtube.com/@bootdotdev)"
+
+        print(extract_markdown_images(text))
+        print(extract_markdown_links(text2))
 
 if __name__ == "__main__":
     unittest.main()
